@@ -1,0 +1,660 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экзамен2</title>
+    <style>
+        body {
+            width: 100%;
+            height: 3000px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blokmenu {
+            width: 100%;
+            height: 2%;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
+
+        .blokmenu1 {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            height: 100%;
+            column-gap: 20px;
+            align-items: baseline;
+            margin-left: 50px;
+        }
+
+        .blokmenu2 {
+            display: flex;
+            flex-direction: row;
+            width: 25%;
+            height: 100%;
+            column-gap: 20px;
+            align-items: baseline;
+            justify-content: space-evenly;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        hr {
+            margin-top: -15px;
+            margin-left: 15px;
+            width: 60%;
+        }
+
+        .blokpriv {
+            width: 100%;
+            height: 13%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .blokpriv1 {
+            width: 60%;
+            height: 100%;
+            margin-left: 60px;
+        }
+
+        .blokpriv2 {
+            width: 40%;
+            height: 100%;
+
+        }
+
+        .blokpriv3 {
+            width: 80%;
+            height: 50%;
+            margin-left: 50px;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img2 {
+            width: 10%;
+            height: 20%;
+            margin-top: 10%;
+        }
+
+        .img3 {
+            margin-top: 8%;
+            margin-left: 2%;
+            width: 30px;
+            height: 30px;
+            color: white;
+            position: absolute;
+            visibility: hidden;
+            background: none;
+        }
+
+        .img4 {
+            margin-top: 8%;
+            margin-left: 97%;
+            width: 30px;
+            height: 30px;
+            color: white;
+            position: absolute;
+            visibility: hidden;
+            background: none;
+        }
+
+        .blokpriv4 {
+            width: 100%;
+            height: 9%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .blokpriv5 {
+            width: 30%;
+            height: 100%;
+            margin-left: 70px;
+        }
+
+        .blokpriv6 {
+            width: 55%;
+            height: 100%;
+        }
+
+        .blokpriv7 {
+            margin-top: 10%;
+        }
+
+        .blokpriv8 {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+
+        .blokpriv9 {
+            width: 28%;
+            height: 100%;
+        }
+
+        .blokpriv10 {
+            width: 16%;
+            height: 100%;
+        }
+
+        .blokpriv11 {
+            width: 100%;
+            height: 12%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blokpriv12 {
+            width: 100%;
+            height: 22%;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .blokpriv13 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .blokpriv14 {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid;
+            border-left-width: 0;
+            border-top-width: 0;
+            border-color: grey;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+
+        .blokpriv15 {
+            border-right-width: 0;
+        }
+
+        .blokpriv16 {
+            border-bottom-width: 0;
+        }
+
+        .blokform {
+            width: 90%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            box-sizing: content-box;
+        }
+
+        .blokform1 {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            height: 8%;
+            width: 82%;
+            column-gap: 6%;
+            box-sizing: border-box;
+            margin-left: 9%;
+            align-items: center;
+        }
+
+        .blokform2 {
+            width: 26%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+        }
+
+        .blokform3 {
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            width: 10%;
+        }
+
+        .blokform4 {
+            width: 50%;
+            height: 5%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 2%;
+            text-align: center;
+            margin-left: 9%;
+        }
+
+        .blokform5 {
+            display: flex;
+            flex-direction: column;
+            width: 82%;
+            height: 8%;
+            margin-top: 1%;
+            margin-left: 9%;
+
+        }
+
+        .blokform6 {
+            display: flex;
+            flex-direction: column;
+            width: 82%;
+            height: 20%;
+            margin-top: 3%;
+            margin-left: 9%;
+        }
+
+        .blokform7 {
+
+            width: 82%;
+            height: 5%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            text-align: center;
+            margin-left: 9%;
+        }
+
+        .blokform8 {
+            width: 82%;
+            height: 5%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 2%;
+            text-align: center;
+            margin-left: 9%;
+            column-gap: 2%;
+            justify-content: center;
+        }
+
+
+        .blokseti {
+            display: flex;
+            border-radius: 50%;
+            border: 1px solid;
+            width: 35px;
+            height: 35px;
+            align-items: center;
+            justify-content: center;
+            column-gap: 2%;
+            border-color: grey;
+        }
+
+        h1 {
+            margin-top: 70px;
+            margin-left: 60px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .h2 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .h3 {
+            text-align: center;
+            margin-top: 3%;
+            margin-left: 50%;
+            color: white;
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .p3 {
+            text-align: center;
+            margin-top: 6%;
+            margin-left: 35%;
+            color: white;
+            position: absolute;
+            visibility: hidden;
+
+        }
+
+        p {
+            font-size: 20px;
+            font-style: garamond;
+            white-space: normal;
+            margin-left: 60px;
+            text-align: left;
+        }
+
+        .p {
+            font-size: 15px;
+        }
+
+        .p1 {
+            font-size: 15px;
+            margin-left: 0px
+        }
+
+        .p2 {
+
+            font-size: 15px;
+            margin-left: 0;
+
+        }
+
+
+        button {
+            width: 90px;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 15px;
+            color: grey;
+            margin-left: 110px;
+        }
+
+        .button {
+            width: 90px;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 15px;
+            color: grey;
+            margin-left: 60px;
+        }
+
+        .button1 {
+            margin-top: -10%;
+        }
+
+        .button2 {
+
+            margin-top: 10%;
+            margin-left: 49%;
+            position: absolute;
+            visibility: hidden;
+            border: 1px solid;
+            border-color: white;
+            background: none;
+            color: white;
+        }
+
+        input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            border: 1px solid;
+            border-color: rgb(187, 183, 183);
+        }
+
+        .input1 {
+            height: 30%;
+        }
+
+        .input2 {
+            width: 15px;
+            height: 15px;
+        }
+
+        form {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        legend {
+            height: 50%;
+            margin-bottom: 10px;
+        }
+
+        option {
+            height: 50%;
+        }
+
+        select {
+            height: 60%;
+        }
+
+        textarea {
+            height: 98%;
+            margin-bottom: 1%;
+        }
+
+        .label {
+            margin-bottom: 10px;
+        }
+
+        .blokseti:hover {
+            background-color: grey;
+        }
+
+        .blokpriv8:hover::before {
+            content: " ";
+            background: rgb(77, 72, 72);
+            position: absolute;
+            inset: 0;
+            opacity: 0.5;
+        }
+
+        .blokpriv8:hover .h3 {
+            visibility: visible;
+        }
+
+        .blokpriv8:hover .p3 {
+            visibility: visible;
+        }
+
+        .blokpriv8:hover .button2 {
+            visibility: visible;
+        }
+
+        .blokpriv8:hover .img3 {
+            visibility: visible;
+        }
+
+        .blokpriv8:hover .img4 {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blokmenu">
+        <div class="blokmenu1">
+            <h3> TOUR- CIUDE</h3>
+            <p> Stories</p>
+            <p> Gallery</p>
+            <p> Features</p>
+            <p> Write to us</p>
+        </div>
+        <div class="blokmenu2">
+            <img src="twitter-128.png">
+            <img src="facebook-128.png">
+            <img src="instagram-2-128.png">
+            <img src="youtube-128.png">
+            <img src="gmail-128.png">
+        </div>
+    </div>
+    <hr>
+    <div class="blokpriv">
+        <div class="blokpriv1">
+            <div class="blokpriv3">
+                <h1>Let s hit the road</h1>
+                <p> Most people like a change. If they live in the country they like to go to a big town and spend their
+                    time looking at the shop windows and visiting cinemas, theatres and museums.</p>
+                <p class="p"> f they live in the city, they like to go the some quiet place in the hills or by the sea,
+                    do nothing
+                    but walking, swimming or lying in the sun.</p>
+            </div>
+            <button type> START</button>
+        </div>
+        <div class="blokpriv2">
+            <img class="img1" src="i.webp">
+        </div>
+    </div>
+
+    <div class="blokpriv4">
+        <div class="blokpriv5">
+            <img class="img1" src="i (1).webp">
+        </div>
+        <div class="blokpriv6">
+            <p> STORY</p>
+            <p class="p">Most people like a change. If they live in the country they like to go to a big town and
+                spend their time looking at the shop windows and visiting cinemas, theatres and museums.Most people like
+                a change. If they live in the country they like to go to a big town and
+                spend their time looking at the shop windows and visiting cinemas, theatres and museums.</p>
+            <button class="button" type> MORE</button>
+        </div>
+    </div>
+
+    <div class="blokpriv">
+        <div class="blokpriv1">
+            <div class="blokpriv3 blokpriv7">
+                <p> STORY</p>
+                <p class="p"> Many people celebrate Memorial Day by participating in activities and events that honor
+                    the memory of those who have died while serving in the military. This can include visiting
+                    cemeteries and memorials.</p>
+            </div>
+            <button class="button1" type> START</button>
+        </div>
+        <div class="blokpriv2">
+            <img class="img1" src="111.jpg">
+        </div>
+    </div>
+
+    <div class="blokpriv11">
+        <h2> Gallery</h2>
+        <div class="blokpriv8">
+            <h3 class="h3">Title</h3>
+            <p class="p3">Many people are very fond of collecting. Some collect old coins, <br> others collect
+                post-cards.</p>
+            <button class="button2" type> MORE</button>
+            <img class="img3" src="стрелкал.png">
+            <img class="img4" src="стрелкап.png">
+            <div class="blokpriv9"><img class="img1" src="10.jpg"></div>
+            <div class="blokpriv9"><img class="img1" src="11.jpg"></div>
+            <div class="blokpriv10"><img class="img1" src="13.jpg"></div>
+            <div class="blokpriv9"><img class="img1" src="12.jpg"></div>
+        </div>
+    </div>
+
+    <div class="blokpriv12">
+        <h2> Features</h2>
+        <div class="blokpriv13">
+            <div class="blokpriv14">
+                <img class="img2" src="airplane-48.png">
+                <p class="p1"><b>One</b></p>
+                <p class="p1">One of the first things I do when I arrive at work is set up my station. This includes
+                    getting my notepad</p>
+            </div>
+            <div class="blokpriv14">
+                <img class="img2" src="map_marker-48.png">
+                <p class="p1"><b>Two</b></p>
+                <p class="p1">One of the first things I do when I arrive at work is set .</p>
+            </div>
+            <div class="blokpriv14 blokpriv15">
+                <img class="img2" src="movie-48.png">
+                <p class="p1"><b>Three</b></p>
+                <p class="p1">One of the first things I do when I arrive at work is set up my stationI arrive at work is
+                    set up my.</p>
+            </div>
+        </div>
+        <div class="blokpriv13">
+            <div class="blokpriv14 blokpriv16">
+                <img class="img2" src="alarm_clock-48.png">
+                <p class="p1"><b>Four</b></p>
+                <p class="p1">One of the first things I do when I arrive at work is set up my station. This includes
+                    getting my notepad</p>
+            </div>
+            <div class="blokpriv14 blokpriv16">
+                <img class="img2" src="face-48.png">
+                <p class="p1"><b>Five</b></p>
+                <p class="p1">One of the first things I do when I arrive at work is set I do when I arrive at work is
+                    set .</p>
+            </div>
+            <div class="blokpriv14 blokpriv15 blokpriv16">
+                <img class="img2" src="genius-48.png">
+                <p class="p1"><b>Six</b></p>
+                <p class="p1">One of the first things I do when I arrive at work is set up my stationI arrive at work is
+                    set up my.</p>
+            </div>
+        </div>
+    </div>
+    <div class="blokform">
+        <form>
+            <h2 class="h2"> Write to us</h2>
+            <div class="blokform1">
+                <label class="blokform2">
+                    <span><b>Name:</b></span>
+                    <input type="text" id="nam" name="nam" />
+                </label>
+
+                <label class="blokform2">
+                    <span><b>Email:</b></span>
+                    <input type="text" id="nam" name="nam" />
+                </label>
+
+                <label class="blokform2">
+                    <span><b>Phone:</b></span>
+                    <input type="text" id="nam" name="nam" />
+                </label>
+            </div>
+            <div class="blokform4">
+                <p class="p2"><b>Contact me via:</b></p>
+                <div class="blokform3"><input class="input1" type="radio" value="=Email" id="Email" name="Email" />
+                    <label for="Email">Email</label>
+                </div>
+                <div class="blokform3"><input class="input1" type="radio" value="=Phone" id="Phone" name="Phone" />
+                    <label for="Phone">Phone</label>
+                </div>
+                <div class="blokform3"><input class="input1" type="radio" value="=Telegram" id="Telegram"
+                        name="Telegram" />
+                    <label for="Telegram">Telegram</label>
+                </div>
+            </div>
+            <div class="blokform5">
+                <legend><b>Topic:</b></legend>
+                <select id="spisok" name="spisok">
+                    <option> Post my story</option>
+                </select>
+            </div>
+            <div class="blokform6">
+                <label class="label" for="=message"><b>Message:</b></label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="blokform7">
+                <label>
+                    <input class="input2" type="checkbox" id="human" name="human" />
+                    <span><b>I am human</b></span>
+                </label>
+                <button type> SEND</button>
+            </div>
+            <div class="blokform8">
+                <div class="blokseti"><img src="twitter-128.png"></div>
+                <div class="blokseti"><img src="facebook-128.png"></div>
+                <div class="blokseti"><img src="instagram-2-128.png"></div>
+                <div class="blokseti"><img src="youtube-128.png"></div>
+                <div class="blokseti"><img src="gmail-128.png"></div>
+            </div>
+    </div>
+    </form>
+
+</body>
+
+</html>

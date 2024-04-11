@@ -1,0 +1,2099 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экзамен 1</title>
+    <style>
+        @media screen and (min-width: 1000px) {
+            body {
+                width: 100%;
+                height: 1200px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .blokmenu {
+                width: 20%;
+                height: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                text-align: left;
+                font-size: 25px;
+                background-color: rgb(243, 242, 242);
+                border-right: 2px solid;
+                border-color: grey;
+            }
+
+            .blokosn {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                background-color: rgb(243, 242, 242);
+
+            }
+
+            .blok1 {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 20%;
+                justify-content: space-around;
+                margin-top: 30px;
+
+            }
+
+            .blok2 {
+                width: 23%;
+                height: 70%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+                align-items: center;
+
+            }
+
+            .blok3 {
+                display: flex;
+                background-color: rgb(61, 165, 61);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok4 {
+                width: 50%;
+                height: 50%;
+                margin: auto;
+
+            }
+
+            .blok5 {
+                box-sizing: border-box;
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .blok6 {
+                box-sizing: border-box;
+                width: 60%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .blok7 {
+                box-sizing: border-box;
+                width: 95%;
+                margin-top: 20px;
+                font-size: 20px;
+                color: grey;
+                text-align: right;
+            }
+
+            .blok8 {
+                box-sizing: border-box;
+                width: 95%;
+                margin-top: 10px;
+                font-size: 25px;
+                color: black;
+                text-align: right;
+            }
+
+            .blok9 {
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+                vertical-align: middle;
+                margin-top: 5%;
+            }
+
+            .blok10 {
+                display: flex;
+                background-color: rgb(238, 176, 5);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok11 {
+                display: flex;
+                background-color: rgb(28, 23, 169);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok12 {
+                display: flex;
+                background-color: rgb(153, 8, 8);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blokseredina {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 30%;
+                justify-content: space-around;
+
+            }
+
+            .blokser1 {
+                display: flex;
+                flex-direction: column;
+                width: 32%;
+                height: 80%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+
+
+            }
+
+            .blokser2 {
+                display: flex;
+                background-color: rgb(61, 165, 61);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .blokser3 {
+                width: 90%;
+                height: 90%;
+                margin: auto;
+            }
+
+            .blokser4 {
+                margin-top: 10px;
+                margin-left: 10px;
+                font-size: 20px;
+                color: grey;
+                text-align: left;
+            }
+
+            .blokser5 {
+                display: flex;
+                background-color: rgb(238, 176, 5);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .blokser6 {
+                display: flex;
+                background-color: rgb(28, 23, 169);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .bkon {
+                width: 100%;
+                height: 35%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .bkon1 {
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+                height: 90%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+                margin-top: -1px;
+            }
+
+            .bkon2 {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(238, 176, 5);
+                width: 96%;
+                height: 21%;
+                margin-left: 2%;
+                margin-top: -3%;
+                align-items: center;
+                column-gap: 10px;
+            }
+
+            .bkon6 {
+                display: flex;
+                flex-direction: row;
+                width: 15%;
+                height: 100%;
+                align-items: center;
+                column-gap: 30px;
+                font-size: 20px;
+                color: white;
+                margin-left: 15px;
+            }
+
+            .bkon7 {
+                width: 50%;
+                height: 60%;
+                column-gap: 15px;
+                font-size: 20px;
+                color: white;
+                margin-top: 10px;
+
+            }
+
+            .bkon8 {
+                display: flex;
+                flex-direction: row;
+                width: 25%;
+                height: 70%;
+                align-items: center;
+                column-gap: 10px;
+                font-size: 15px;
+                color: white;
+                margin: auto;
+
+            }
+
+            .bkon3 {
+                box-sizing: border-box;
+                width: 100%;
+                height: 17%;
+                display: flex;
+                flex-direction: row;
+                padding-top: 10px;
+            }
+
+            .bkon4 {
+                width: 70%;
+                height: 100%;
+            }
+
+            .bkon5 {
+                width: 15%;
+                height: 100%;
+            }
+
+            .bkon9 {
+                background-color: rgb(30, 36, 216);
+                width: 96%;
+                height: 21%;
+                margin-left: 2%;
+                margin-top: -3%;
+                align-items: center;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin-left: 20px;
+            }
+
+            .img {
+                width: 20px;
+                height: 20px;
+            }
+
+            h1,
+            h2 {
+                text-align: left;
+                margin-left: 5%;
+
+            }
+
+            hr {
+                border-bottom: 1px solid;
+                border-color: rgb(158, 156, 156);
+                width: 100%;
+                margin-top: -30px;
+            }
+
+            .blok {
+                margin-left: 1%;
+                height: 60px;
+                width: 90%;
+                margin-top: 10px;
+                line-height: 60px;
+                font-size: 20px;
+
+            }
+
+            .blok:hover {
+                background-color: brown;
+            }
+
+            .bkon8:hover {
+                background-color: rgb(214, 159, 57);
+            }
+
+            hr {
+                margin-top: 15px;
+                width: 95%;
+                border-color: rgb(224, 218, 218);
+            }
+
+            p {
+                margin-top: -1px;
+                font-size: 17px;
+                color: grey;
+            }
+
+            .p {
+                font-size: 20px;
+                color: white;
+                padding: 10px;
+            }
+
+            .p1 {
+                font-size: 15px;
+                color: white;
+                margin-top: -15px;
+                margin-left: 15px;
+            }
+
+            input {
+                margin-left: 20px;
+            }
+
+            label {
+                font-size: 100%;
+                color: grey;
+                margin-top: 2%;
+            }
+
+            table {
+                box-sizing: border-box;
+                margin-left: 5%;
+                border-collapse: collapse;
+                width: 91%;
+                height: 90%;
+                margin-top: 3%;
+            }
+
+            td {
+                width: 90px;
+                height: 50px;
+
+            }
+
+            th {
+                text-align: left;
+                width: 30%;
+                height: 23%;
+                font-size: 20px;
+                color: rgb(20, 128, 147);
+            }
+
+            tr {
+                border-bottom: 1px solid;
+            }
+
+            #ss1 {
+                width: 60px;
+            }
+
+            #ss2 {
+                width: 120px;
+            }
+
+            #ss3 {
+                border-bottom: none;
+            }
+
+            .bkf {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                column-gap: 500px;
+                margin-top: 10px;
+            }
+
+            .bkf1 {
+                width: 15%;
+                display: flex;
+                flex-direction: row;
+                column-gap: 30px;
+            }
+
+            .vrv {
+                margin-left: 3%;
+            }
+
+            span {
+                padding-left: 1%;
+
+            }
+
+            .tripolos {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .tripolos1 {
+
+                margin-top: 15%;
+                visibility: hidden;
+                z-index: -1;
+            }
+
+            .zag {
+                width: 80%;
+            }
+        }
+
+
+        @media screen and (min-width: 800px) and (max-width:1000px) {
+            body {
+                width: 100%;
+                height: 1600px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .blokmenu {
+                width: 20%;
+                height: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                text-align: left;
+                font-size: 20px;
+                background-color: rgb(243, 242, 242);
+                border-right: 2px solid;
+                border-color: grey;
+            }
+
+            .blokosn {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                background-color: rgb(243, 242, 242);
+
+            }
+
+            .blok1 {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 25%;
+                justify-content: space-around;
+                margin-top: 30px;
+                row-gap: 2%;
+
+            }
+
+            .blok2 {
+                width: 45%;
+                height: 40%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+                align-items: center;
+
+            }
+
+            .blok3 {
+                display: flex;
+                background-color: rgb(61, 165, 61);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok4 {
+                width: 50%;
+                height: 50%;
+                margin: auto;
+
+            }
+
+            .blok5 {
+                box-sizing: border-box;
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .blok6 {
+                box-sizing: border-box;
+                width: 60%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .blok7 {
+                box-sizing: border-box;
+                width: 95%;
+                margin-top: 20px;
+                font-size: 20px;
+                color: grey;
+                text-align: right;
+            }
+
+            .blok8 {
+                box-sizing: border-box;
+                width: 95%;
+                margin-top: 10px;
+                font-size: 25px;
+                color: black;
+                text-align: right;
+            }
+
+            .blok9 {
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+                vertical-align: middle;
+                margin-top: 5%;
+            }
+
+            .blok10 {
+                display: flex;
+                background-color: rgb(238, 176, 5);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok11 {
+                display: flex;
+                background-color: rgb(28, 23, 169);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok12 {
+                display: flex;
+                background-color: rgb(153, 8, 8);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blokseredina {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 20%;
+                justify-content: space-around;
+
+            }
+
+            .blokser1 {
+                display: flex;
+                flex-direction: column;
+                width: 32%;
+                height: 80%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+
+
+            }
+
+            .blokser2 {
+                display: flex;
+                background-color: rgb(61, 165, 61);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .blokser3 {
+                width: 90%;
+                height: 90%;
+                margin: auto;
+            }
+
+            .blokser4 {
+                margin-top: 10px;
+                margin-left: 10px;
+                font-size: 20px;
+                color: grey;
+                text-align: left;
+            }
+
+            .blokser5 {
+                display: flex;
+                background-color: rgb(238, 176, 5);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .blokser6 {
+                display: flex;
+                background-color: rgb(28, 23, 169);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .bkon {
+                width: 100%;
+                height: 45%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                row-gap: 5%;
+            }
+
+            .bkon1 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 50%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+                margin-top: -1px;
+            }
+
+            .bkon2 {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(238, 176, 5);
+                width: 96%;
+                height: 21%;
+                margin-left: 2%;
+                margin-top: -3%;
+                align-items: center;
+                column-gap: 10px;
+            }
+
+            .bkon6 {
+                display: flex;
+                flex-direction: row;
+                width: 15%;
+                height: 100%;
+                align-items: center;
+                column-gap: 30px;
+                font-size: 20px;
+                color: white;
+                margin-left: 15px;
+            }
+
+            .bkon7 {
+                width: 50%;
+                height: 60%;
+                column-gap: 15px;
+                font-size: 20px;
+                color: white;
+                margin-top: 10px;
+
+            }
+
+            .bkon8 {
+                display: flex;
+                flex-direction: row;
+                width: 25%;
+                height: 70%;
+                align-items: center;
+                column-gap: 10px;
+                font-size: 15px;
+                color: white;
+                margin: auto;
+
+            }
+
+            .bkon3 {
+                box-sizing: border-box;
+                width: 100%;
+                height: 17%;
+                display: flex;
+                flex-direction: row;
+                padding-top: 10px;
+            }
+
+            .bkon4 {
+                width: 70%;
+                height: 100%;
+            }
+
+            .bkon5 {
+                width: 15%;
+                height: 100%;
+            }
+
+            .bkon9 {
+                background-color: rgb(30, 36, 216);
+                width: 96%;
+                height: 21%;
+                margin-left: 2%;
+                margin-top: -3%;
+                align-items: center;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin-left: 20px;
+            }
+
+            .img {
+                width: 20px;
+                height: 20px;
+            }
+
+            h1,
+            h2 {
+                text-align: left;
+                margin-left: 5%;
+
+            }
+
+            hr {
+                border-bottom: 1px solid;
+                border-color: rgb(158, 156, 156);
+                width: 100%;
+                margin-top: -30px;
+            }
+
+            .blok {
+                margin-left: 1%;
+                height: 60px;
+                width: 90%;
+                margin-top: 10px;
+                line-height: 60px;
+                font-size: 15px;
+
+            }
+
+            .blok:hover {
+                background-color: brown;
+            }
+
+            .bkon8:hover {
+                background-color: rgb(214, 159, 57);
+            }
+
+            hr {
+                margin-top: 15px;
+                width: 95%;
+                border-color: rgb(224, 218, 218);
+            }
+
+            p {
+                margin-top: -1px;
+                font-size: 16px;
+                color: grey;
+            }
+
+            .p {
+                font-size: 20px;
+                color: white;
+                padding: 10px;
+            }
+
+            .p1 {
+                font-size: 15px;
+                color: white;
+                margin-top: -15px;
+                margin-left: 15px;
+            }
+
+            input {
+                margin-left: 20px;
+            }
+
+            label {
+                font-size: 100%;
+                color: grey;
+                margin-top: 2%;
+            }
+
+            table {
+                box-sizing: border-box;
+                margin-left: 5%;
+                border-collapse: collapse;
+                width: 91%;
+                height: 90%;
+                margin-top: 3%;
+            }
+
+            td {
+                width: 90px;
+                height: 50px;
+
+            }
+
+            th {
+                text-align: left;
+                width: 30%;
+                height: 23%;
+                font-size: 20px;
+                color: rgb(20, 128, 147);
+            }
+
+            tr {
+                border-bottom: 1px solid;
+            }
+
+            #ss1 {
+                width: 60px;
+            }
+
+            #ss2 {
+                width: 120px;
+            }
+
+            #ss3 {
+                border-bottom: none;
+            }
+
+            .bkf {
+                width: 100%;
+                height: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                column-gap: 400px;
+                margin-top: 5%;
+            }
+
+            .bkf1 {
+                width: 15%;
+                display: flex;
+                flex-direction: row;
+                column-gap: 30px;
+            }
+
+            .vrv {
+                margin-left: 3%;
+            }
+
+            span {
+                padding-left: 1%;
+
+            }
+
+            .tripolos {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .tripolos1 {
+                margin-top: 15%;
+                visibility: hidden;
+                z-index: -1;
+            }
+
+            .zag {
+                width: 80%;
+            }
+        }
+
+
+        @media screen and (min-width: 650px) and (max-width:800px) {
+            body {
+                width: 100%;
+                height: 1700px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .blokmenu {
+                width: 20%;
+                height: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                text-align: left;
+                font-size: 20px;
+                background-color: rgb(243, 242, 242);
+                border-right: 2px solid;
+                border-color: grey;
+                visibility: hidden;
+            }
+
+            .blokosn {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                background-color: rgb(243, 242, 242);
+
+            }
+
+            .blok1 {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 25%;
+                justify-content: space-around;
+                margin-top: 30px;
+                row-gap: 2%;
+
+            }
+
+            .blok2 {
+                width: 45%;
+                height: 40%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+                align-items: center;
+
+            }
+
+            .blok3 {
+                display: flex;
+                background-color: rgb(61, 165, 61);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok4 {
+                width: 50%;
+                height: 50%;
+                margin: auto;
+
+            }
+
+            .blok5 {
+                box-sizing: border-box;
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .blok6 {
+                box-sizing: border-box;
+                width: 60%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .blok7 {
+                box-sizing: border-box;
+                width: 95%;
+                margin-top: 20px;
+                font-size: 20px;
+                color: grey;
+                text-align: right;
+            }
+
+            .blok8 {
+                box-sizing: border-box;
+                width: 95%;
+                margin-top: 10px;
+                font-size: 25px;
+                color: black;
+                text-align: right;
+            }
+
+            .blok9 {
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+                vertical-align: middle;
+                margin-top: 5%;
+            }
+
+            .blok10 {
+                display: flex;
+                background-color: rgb(238, 176, 5);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok11 {
+                display: flex;
+                background-color: rgb(28, 23, 169);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok12 {
+                display: flex;
+                background-color: rgb(153, 8, 8);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blokseredina {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 20%;
+                justify-content: space-around;
+
+            }
+
+            .blokser1 {
+                display: flex;
+                flex-direction: column;
+                width: 32%;
+                height: 80%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+
+
+            }
+
+            .blokser2 {
+                display: flex;
+                background-color: rgb(61, 165, 61);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .blokser3 {
+                width: 90%;
+                height: 90%;
+                margin: auto;
+            }
+
+            .blokser4 {
+                margin-top: 10px;
+                margin-left: 10px;
+                font-size: 20px;
+                color: grey;
+                text-align: left;
+            }
+
+            .blokser5 {
+                display: flex;
+                background-color: rgb(238, 176, 5);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .blokser6 {
+                display: flex;
+                background-color: rgb(28, 23, 169);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .bkon {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                row-gap: 5%;
+            }
+
+            .bkon1 {
+                display: flex;
+                flex-direction: column;
+                width: 96%;
+                height: 50%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+                margin-top: -1px;
+            }
+
+            .bkon2 {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(238, 176, 5);
+                width: 96%;
+                height: 21%;
+                margin-left: 2%;
+                margin-top: -3%;
+                align-items: center;
+                column-gap: 10px;
+            }
+
+            .bkon6 {
+                display: flex;
+                flex-direction: row;
+                width: 15%;
+                height: 100%;
+                align-items: center;
+                column-gap: 30px;
+                font-size: 20px;
+                color: white;
+                margin-left: 15px;
+            }
+
+            .bkon7 {
+                width: 50%;
+                height: 60%;
+                column-gap: 15px;
+                font-size: 20px;
+                color: white;
+                margin-top: 10px;
+
+            }
+
+            .bkon8 {
+                display: flex;
+                flex-direction: row;
+                width: 25%;
+                height: 70%;
+                align-items: center;
+                column-gap: 10px;
+                font-size: 15px;
+                color: white;
+                margin: auto;
+
+            }
+
+            .bkon3 {
+                box-sizing: border-box;
+                width: 100%;
+                height: 17%;
+                display: flex;
+                flex-direction: row;
+                padding-top: 10px;
+            }
+
+            .bkon4 {
+                width: 70%;
+                height: 100%;
+            }
+
+            .bkon5 {
+                width: 15%;
+                height: 100%;
+            }
+
+            .bkon9 {
+                background-color: rgb(30, 36, 216);
+                width: 96%;
+                height: 21%;
+                margin-left: 2%;
+                margin-top: -3%;
+                align-items: center;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin-left: 20px;
+            }
+
+            .img {
+                width: 20px;
+                height: 20px;
+            }
+
+            h1,
+            h2 {
+                text-align: left;
+                margin-left: 5%;
+
+            }
+
+            hr {
+                border-bottom: 1px solid;
+                border-color: rgb(158, 156, 156);
+                width: 100%;
+                margin-top: -30px;
+            }
+
+            .blok {
+                margin-left: 1%;
+                height: 60px;
+                width: 90%;
+                margin-top: 10px;
+                line-height: 60px;
+                font-size: 15px;
+
+            }
+
+            .blok:hover {
+                background-color: brown;
+            }
+
+            .bkon8:hover {
+                background-color: rgb(214, 159, 57);
+            }
+
+
+
+
+            hr {
+                margin-top: 15px;
+                width: 95%;
+                border-color: rgb(224, 218, 218);
+            }
+
+            p {
+                margin-top: -1px;
+                font-size: 16px;
+                color: grey;
+            }
+
+            .p {
+                font-size: 20px;
+                color: white;
+                padding: 10px;
+            }
+
+            .p1 {
+                font-size: 15px;
+                color: white;
+                margin-top: -15px;
+                margin-left: 15px;
+            }
+
+            input {
+                margin-left: 20px;
+            }
+
+            label {
+                font-size: 100%;
+                color: grey;
+                margin-top: 2%;
+            }
+
+            table {
+                box-sizing: border-box;
+                margin-left: 5%;
+                border-collapse: collapse;
+                width: 91%;
+                height: 90%;
+                margin-top: 3%;
+            }
+
+            td {
+                width: 90px;
+                height: 50px;
+
+            }
+
+            th {
+                text-align: left;
+                width: 30%;
+                height: 23%;
+                font-size: 20px;
+                color: rgb(20, 128, 147);
+            }
+
+            tr {
+                border-bottom: 1px solid;
+            }
+
+            #ss1 {
+                width: 60px;
+            }
+
+            #ss2 {
+                width: 120px;
+            }
+
+            #ss3 {
+                border-bottom: none;
+            }
+
+            .bkf {
+                width: 100%;
+                height: 3%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                column-gap: 200px;
+                margin-top: 5%;
+            }
+
+            .bkf1 {
+                width: 15%;
+                display: flex;
+                flex-direction: row;
+                column-gap: 30px;
+            }
+
+            .vrv {
+                margin-left: 3%;
+            }
+
+            span {
+                padding-left: 1%;
+
+            }
+            .tripolos {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .tripolos1 {
+                margin-left: 70px;
+                margin-top: -55px;
+                visibility: visible;
+                z-index: -1;
+            }
+            .zag{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 650px) {
+            body {
+                width: 100%;
+                height: 2200px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .blokmenu {
+                width: 20%;
+                height: 100%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                text-align: left;
+                font-size: 20px;
+                background-color: rgb(243, 242, 242);
+                border-right: 2px solid;
+                border-color: grey;
+                visibility: hidden;
+            }
+
+            .blokosn {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                background-color: rgb(243, 242, 242);
+
+            }
+
+            .blok1 {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 20%;
+                justify-content: space-around;
+                margin-top: 30px;
+                row-gap: 2%;
+
+            }
+
+            .blok2 {
+                width: 45%;
+                height: 40%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+                align-items: center;
+
+            }
+
+            .blok3 {
+                display: flex;
+                background-color: rgb(61, 165, 61);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok4 {
+                width: 50%;
+                height: 50%;
+                margin: auto;
+
+            }
+
+            .blok5 {
+                box-sizing: border-box;
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .blok6 {
+                box-sizing: border-box;
+                width: 60%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .blok7 {
+                box-sizing: border-box;
+                width: 95%;
+                margin-top: 20px;
+                font-size: 20px;
+                color: grey;
+                text-align: right;
+            }
+
+            .blok8 {
+                box-sizing: border-box;
+                width: 95%;
+                margin-top: 10px;
+                font-size: 25px;
+                color: black;
+                text-align: right;
+            }
+
+            .blok9 {
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+                vertical-align: middle;
+                margin-top: 5%;
+            }
+
+            .blok10 {
+                display: flex;
+                background-color: rgb(238, 176, 5);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok11 {
+                display: flex;
+                background-color: rgb(28, 23, 169);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blok12 {
+                display: flex;
+                background-color: rgb(153, 8, 8);
+                width: 30%;
+                height: 90%;
+                margin-left: 6%;
+                margin-top: -6%;
+            }
+
+            .blokseredina {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 40%;
+                row-gap: 3%;
+                
+            }
+
+            .blokser1 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 30%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+
+
+            }
+
+            .blokser2 {
+                display: flex;
+                background-color: rgb(61, 165, 61);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .blokser3 {
+                width: 90%;
+                height: 90%;
+                margin: auto;
+            }
+
+            .blokser4 {
+                margin-top: 10px;
+                margin-left: 10px;
+                font-size: 20px;
+                color: grey;
+                text-align: left;
+            }
+
+            .blokser5 {
+                display: flex;
+                background-color: rgb(238, 176, 5);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .blokser6 {
+                display: flex;
+                background-color: rgb(28, 23, 169);
+                width: 94%;
+                height: 50%;
+                margin-left: 3%;
+                margin-top: -5%;
+
+            }
+
+            .bkon {
+                width: 100%;
+                height: 39%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                row-gap: 5%;
+            }
+
+            .bkon1 {
+                display: flex;
+                flex-direction: column;
+                width: 96%;
+                height: 55%;
+                background-color: white;
+                border-bottom: 3px solid;
+                border-right: 3px solid;
+                border-color: rgb(168, 168, 168);
+                margin-top: -1px;
+            }
+
+            .bkon2 {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(238, 176, 5);
+                width: 96%;
+                height: 21%;
+                margin-left: 2%;
+                margin-top: -3%;
+                align-items: center;
+                column-gap: 10px;
+            }
+
+            .bkon6 {
+                display: flex;
+                flex-direction: row;
+                width: 15%;
+                height: 100%;
+                align-items: center;
+                column-gap: 30px;
+                font-size: 20px;
+                color: white;
+                margin-left: 15px;
+            }
+
+            .bkon7 {
+                width: 50%;
+                height: 60%;
+                column-gap: 15px;
+                font-size: 20px;
+                color: white;
+                margin-top: 10px;
+
+            }
+
+            .bkon8 {
+                display: flex;
+                flex-direction: row;
+                width: 25%;
+                height: 70%;
+                align-items: center;
+                column-gap: 10px;
+                font-size: 15px;
+                color: white;
+                margin: auto;
+
+            }
+
+            .bkon3 {
+                box-sizing: border-box;
+                width: 100%;
+                height: 17%;
+                display: flex;
+                flex-direction: row;
+                padding-top: 10px;
+            }
+
+            .bkon4 {
+                width: 70%;
+                height: 100%;
+            }
+
+            .bkon5 {
+                width: 15%;
+                height: 100%;
+            }
+
+            .bkon9 {
+                background-color: rgb(30, 36, 216);
+                width: 96%;
+                height: 21%;
+                margin-left: 2%;
+                margin-top: -3%;
+                align-items: center;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin-left: 20px;
+            }
+
+            .img {
+                width: 20px;
+                height: 20px;
+            }
+
+            h1,
+            h2 {
+                text-align: left;
+                margin-left: 5%;
+
+            }
+
+            hr {
+                border-bottom: 1px solid;
+                border-color: rgb(158, 156, 156);
+                width: 100%;
+                margin-top: -30px;
+            }
+
+            .blok {
+                margin-left: 1%;
+                height: 60px;
+                width: 90%;
+                margin-top: 10px;
+                line-height: 60px;
+                font-size: 15px;
+
+            }
+
+            .blok:hover {
+                background-color: brown;
+            }
+
+            .bkon8:hover {
+                background-color: rgb(214, 159, 57);
+            }
+
+
+
+
+            hr {
+                margin-top: 15px;
+                width: 95%;
+                border-color: rgb(224, 218, 218);
+            }
+
+            p {
+                margin-top: -1px;
+                font-size: 16px;
+                color: grey;
+            }
+
+            .p {
+                font-size: 20px;
+                color: white;
+                padding: 10px;
+            }
+
+            .p1 {
+                font-size: 15px;
+                color: white;
+                margin-top: -15px;
+                margin-left: 15px;
+            }
+
+            input {
+                margin-left: 20px;
+            }
+
+            label {
+                font-size: 100%;
+                color: grey;
+                margin-top: 2%;
+            }
+
+            table {
+                box-sizing: border-box;
+                margin-left: 5%;
+                border-collapse: collapse;
+                width: 91%;
+                height: 90%;
+                margin-top: 3%;
+            }
+
+            td {
+                width: 90px;
+                height: 50px;
+
+            }
+
+            th {
+                text-align: left;
+                width: 30%;
+                height: 23%;
+                font-size: 20px;
+                color: rgb(20, 128, 147);
+            }
+
+            tr {
+                border-bottom: 1px solid;
+            }
+
+            #ss1 {
+                width: 60px;
+            }
+
+            #ss2 {
+                width: 120px;
+            }
+
+            #ss3 {
+                border-bottom: none;
+            }
+
+            .bkf {
+                width: 90%;
+                height: 1%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                column-gap: 200px;
+                margin-top: 5%;
+            }
+
+            .bkf1 {
+                width: 14%;
+                display: flex;
+                flex-direction: row;
+                column-gap: 30px;
+                margin-left: 10px;
+            }
+
+            .vrv {
+                margin-left: 3%;
+            }
+
+            span {
+                padding-left: 1%;
+
+            }
+            .tripolos {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .tripolos1 {
+                margin-left: 45px;
+                margin-top: -55px;
+                visibility: visible;
+                z-index: -1;
+            }
+            .zag{
+                width: 80%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="blokmenu">
+        <div>
+            <h2 class="zag">Company</h2>
+            <div class="tripolos1"><img class="img" src="меню.svg"></div>
+        </div>
+        <hr>
+        <div class="blok"><img src="dashboard_gray.svg">&ensp;Dashboard&ensp;</div>
+        <div class="blok"><img src="account_gray.svg">&ensp; User Profile&ensp;</div>
+        <div class="blok"><img src="map_gray.svg">&ensp;Maps&ensp;</div>
+        <div class="blok"><img src="notify_gray.svg">&ensp;Notifications&ensp;</div>
+        <div class="blok"><img src="support_gray.svg">&ensp;Support&ensp;</div>
+    </div>
+
+    <div class="blokosn">
+        <h1>Dashboard</h1>
+        <div class=" blok1">
+            <div class="blok2">
+                <div class="blok5">
+                    <div class="blok3">
+                        <img class="blok4" src="data_white.svg">
+                    </div>
+                    <div class="blok6">
+                        <div class="blok7"> Used Space</div>
+                        <div class="blok8"> 49/50 GB</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="blok9">
+                    <img class="vrv" src="alert.png">
+                    <p class="vrv"> Get more space... </p>
+                </div>
+            </div>
+
+            <div class="blok2">
+                <div class="blok5">
+                    <div class="blok10">
+                        <img class="blok4" src="shop_white.svg">
+                    </div>
+                    <div class="blok6">
+                        <div class="blok7"> Revenue</div>
+                        <div class="blok8"> $ 34,245</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="blok9">
+                    <img class="vrv" src="calendar.png">
+                    <p class="vrv"> Last 24 Hours</p>
+                </div>
+            </div>
+
+            <div class="blok2">
+                <div class="blok5">
+                    <div class="blok11">
+                        <img class="blok4" src="tag_white.svg">
+                    </div>
+                    <div class="blok6">
+                        <div class="blok7"> Fixed Issues</div>
+                        <div class="blok8"> 75</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="blok9">
+                    <img class="vrv" src="down.png">
+                    <p class="vrv">Tracked from Githud</p>
+                </div>
+            </div>
+
+            <div class="blok2">
+                <div class="blok5">
+                    <div class="blok12">
+                        <img class="blok4" src="paperplane_white.svg">
+                    </div>
+                    <div class="blok6">
+                        <div class="blok7">Followers</div>
+                        <div class="blok8">+245</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="blok9">
+                    <img class="vrv" src="time.png">
+                    <p class="vrv"> Just updated</p>
+                </div>
+            </div>
+        </div>
+        <div class="blokseredina">
+            <div class="blokser1">
+                <div class="blokser2">
+                    <img class="blokser3" src="graphics.svg">
+                </div>
+                <div class="blokser4"> Dally Sales</div>
+                <div class="blokser4"> 55% increase in today sales</div>
+                <hr>
+                <div class="blok9">
+                    <img class="vrv" src="time.png">
+                    <p class="vrv"> updated 4 minutes ago</p>
+                </div>
+            </div>
+
+            <div class="blokser1">
+                <div class="blokser5">
+                    <img class="blokser3" src="graphics.svg">
+                </div>
+                <div class="blokser4"> Emal Subscriptions</div>
+                <div class="blokser4"> Last Campaign Performance</div>
+                <hr>
+                <div class="blok9">
+                    <img class="vrv" src="time.png">
+                    <p class="vrv"> campaing sent 2 days ago</p>
+                </div>
+            </div>
+
+            <div class="blokser1">
+                <div class="blokser6">
+                    <img class="blokser3" src="graphics.svg">
+                </div>
+                <div class="blokser4"> Completed Taks</div>
+                <div class="blokser4"> Last Campaingn Perfomance</div>
+                <hr>
+                <div class="blok9">
+                    <img class="vrv" src="time.png">
+                    <p class="vrv"> campaign event 2 days ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bkon">
+            <div class="bkon1">
+                <div class="bkon2">
+                    <div class="bkon6"> Tasks:</div>
+                    <div class="bkon8">
+                        <img class="vrv" src="bug.svg">
+                        <div class="bkon7">Bugs</div>
+                    </div>
+                    <div class="bkon8">
+                        <img class="vrv" src="web.svg">
+                        <div class="bkon7">Website</div>
+                    </div>
+                    <div class="bkon8">
+                        <img class="vrv" src="cloud.svg">
+                        <div class="bkon7">Server</div>
+                    </div>
+                </div>
+                <div class="bkon3">
+                    <div class="bkon4">
+                        <label>
+                            <input type="checkbox" id="sss1" name="sss1" />
+                            <span> Sing contact for "What are conference organizers afraid<br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp; of?"</span>
+                        </label>
+                    </div>
+                    <div class="bkon5"><img class="img" src="edit.png"></div>
+                    <div class="bkon5"><img class="img" src="remove.png"></div>
+                </div>
+                <hr>
+                <div class="bkon3">
+                    <div class="bkon4">
+                        <label>
+                            <input type="checkbox" id="sss1" name="sss1" />
+                            <span> Lines From Great Russian Literature? Or E-mails <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;My Boss?"</span>
+                        </label>
+                    </div>
+                    <div class="bkon5"><img class="img" src="edit.png"></div>
+                    <div class="bkon5"><img class="img" src="remove.png"></div>
+                </div>
+                <hr>
+                <div class="bkon3">
+                    <div class="bkon4">
+                        <label>
+                            <input type="checkbox" id="sss1" name="sss1" />
+                            <span> Sing contact for "What are conference organizers afraid <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;of?"</span>
+                        </label>
+                    </div>
+                    <div class="bkon5"><img class="img" src="edit.png"></div>
+                    <div class="bkon5"><img class="img" src="remove.png"></div>
+                </div>
+                <hr>
+                <div class="bkon3">
+                    <div class="bkon4">
+                        <label>
+                            <input type="checkbox" id="sss1" name="sss1" />
+                            <span> Sing contact for "What are conference organizers afraid <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;of?"</span>
+                        </label>
+                    </div>
+                    <div class="bkon5"><img class="img" src="edit.png"></div>
+                    <div class="bkon5"><img class="img" src="remove.png"></div>
+                </div>
+            </div>
+
+            <div class="bkon1">
+                <div class="bkon9">
+                    <p class="p"> Employees Stats</p>
+                    <p class="p1"> New emploees on 19 th September, 2019 </p>
+                </div>
+                <div class="bkon3">
+                    <table>
+                        <tr>
+                            <th id="ss1"> ID</th>
+                            <th id="ss2"> Name</th>
+                            <th>Salari</th>
+                            <th> Country</th>
+                        </tr>
+                        <tr>
+                            <td id="ss1"> 1</td>
+                            <td id="ss2"> Dakota Rice</td>
+                            <td>$ 36,748</td>
+                            <td> Niger</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Dakota Rice</td>
+                            <td>$ 36,748</td>
+                            <td> Niger</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Dakota Rice</td>
+                            <td>$ 36,748</td>
+                            <td> Niger</td>
+                        </tr>
+                        <tr id="ss3">
+                            <td> 1</td>
+                            <td> Dakota Rice</td>
+                            <td>$ 36,748</td>
+                            <td> Niger</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bkf">
+            <div class="bkf1">
+                <div> ABOUT</div>
+                <div> BLOG</div>
+                <div> LICENSES</div>
+            </div>
+            <div>2019 made with love</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
